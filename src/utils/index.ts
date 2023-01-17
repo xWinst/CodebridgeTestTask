@@ -19,7 +19,7 @@ export const getFormatedDate = (date: string) => {
     const d = new Date(date);
     const year = d.getFullYear();
     const month = d.toLocaleString("en-US", { month: "long" });
-    const dayNumber = d.getDay();
+    const dayNumber = d.getDate();
     const day =
         dayNumber.toString() +
         ["th", "st", "nd", "rd"][
